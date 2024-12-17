@@ -3,7 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\{
-    AuthController
+    AuthController,
+    AdminController,
+    GejalaController,
+    DiagnosisController,
+    RuleController,
+    SolusiController
 };
 
 /*
@@ -60,3 +65,41 @@ Route::get('admin/dashboard', function () {
         return redirect('login');
     }
 })->name('admin.dashboard');
+
+Route::get('admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    // Gejala Routes
+    Route::get('gejala', [GejalaController::class, 'index'])->name('gejala.index');
+    Route::get('gejala/create', [GejalaController::class, 'create'])->name('gejala.create');
+    Route::post('gejala', [GejalaController::class, 'store'])->name('gejala.store');
+    Route::get('gejala/{id}/edit', [GejalaController::class, 'edit'])->name('gejala.edit');
+    Route::put('gejala/{id}', [GejalaController::class, 'update'])->name('gejala.update');
+    Route::delete('gejala/{id}', [GejalaController::class, 'destroy'])->name('gejala.destroy');
+
+    // Diagnosis Routes
+    Route::get('diagnosis', [DiagnosisController::class, 'index'])->name('diagnosis.index');
+    Route::get('diagnosis/create', [DiagnosisController::class, 'create'])->name('diagnosis.create');
+    Route::post('diagnosis', [DiagnosisController::class, 'store'])->name('diagnosis.store');
+    Route::get('diagnosis/{id}/edit', [DiagnosisController::class, 'edit'])->name('diagnosis.edit');
+    Route::put('diagnosis/{id}', [DiagnosisController::class, 'update'])->name('diagnosis.update');
+    Route::delete('diagnosis/{id}', [DiagnosisController::class, 'destroy'])->name('diagnosis.destroy');
+
+    // Rule Routes
+    Route::get('rules', [RuleController::class, 'index'])->name('rules.index');
+    Route::get('rules/create', [RuleController::class, 'create'])->name('rules.create');
+    Route::post('rules', [RuleController::class, 'store'])->name('rules.store');
+    Route::get('rules/{id}/edit', [RuleController::class, 'edit'])->name('rules.edit');
+    Route::put('rules/{id}', [RuleController::class, 'update'])->name('rules.update');
+    Route::delete('rules/{id}', [RuleController::class, 'destroy'])->name('rules.destroy');
+
+    // Solution Routes
+    Route::get('admin/solusi', [SolusiController::class, 'index'])->name('admin.solusi.index');
+    Route::get('solusi', [SolusiController::class, 'index'])->name('solusi.index');
+    Route::get('solusi/create/{diagnosis_id}', [SolusiController::class, 'create'])->name('solusi.create');
+    Route::post('solusi', [SolusiController::class, 'store'])->name('solusi.store');
+    Route::get('solusi/{id}/edit', [SolusiController::class, 'edit'])->name('solusi.edit');
+    Route::put('solusi/{id}', [SolusiController::class, 'update'])->name('solusi.update');
+    Route::delete('solusi/{id}', [SolusiController::class, 'destroy'])->name('solusi.destroy');
+});
