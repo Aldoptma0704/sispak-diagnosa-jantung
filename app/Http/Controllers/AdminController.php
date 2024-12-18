@@ -18,7 +18,7 @@ class AdminController extends Controller
         $gejalaCount = Gejala::count();
         $diagnosisCount = Diagnosis::count();
         $ruleCount = Rule::count();
-        $solusiCount = Rule::count();
+        $solusiCount = Solusi::count();
 
         return view('admin.dashboard', compact('gejalaCount', 'diagnosisCount', 'ruleCount', 'solusiCount'));
     }

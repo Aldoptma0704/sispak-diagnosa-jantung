@@ -8,7 +8,9 @@ use App\Http\Controllers\{
     GejalaController,
     DiagnosisController,
     RuleController,
-    SolusiController
+    SolusiController,
+    UserDiagnosisController,
+    HistoryDiagnosis
 };
 
 /*
@@ -55,6 +57,11 @@ Route::get('user/dashboard', function () {
         return redirect('login');
     }
 })->name('user.dashboard');
+
+Route::get('/user/gejala', [UserDiagnosisController::class, 'index'])->name('user.gejala');
+Route::post('/user/diagnosis', [UserDiagnosisController::class, 'diagnosis'])->name('user.diagnosis');
+Route::get('/user/history', [UserDiagnosisController::class, 'history'])->name('user.history');
+Route::delete('/user/history/{id}', [UserDiagnosisController::class, 'deleteHistory'])->name('user.history.delete');
 
 // Route dashboard admin
 Route::get('admin/dashboard', function () {

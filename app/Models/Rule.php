@@ -14,7 +14,7 @@ class Rule extends Model
 
     public function gejala()
     {
-        return $this->belongsToMany(Gejala::class, 'rule_gejala');
+        return $this->belongsToMany(Gejala::class, 'rule_gejala', 'rule_id', 'gejala_id');
     }
 
     public function diagnosis() 
