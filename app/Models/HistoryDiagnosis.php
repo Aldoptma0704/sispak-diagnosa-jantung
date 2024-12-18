@@ -11,5 +11,5 @@ class HistoryDiagnosis extends Model
 
     protected $table = 'history_diagnosis';
 
-    protected $fillable = ['diagnosis', 'solusi'];
+    protected $fillable = ['user_id', 'diagnosis', 'solusi', 'confidence'];
 }

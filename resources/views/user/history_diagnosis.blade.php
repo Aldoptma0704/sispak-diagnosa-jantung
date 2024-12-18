@@ -21,6 +21,7 @@
                         <th>No</th>
                         <th>Diagnosis</th>
                         <th>Solusi</th>
+                        <th>Keyakinan</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -29,7 +30,8 @@
                         <tr>
                             <td class="text-center">{{ $index + 1 }}</td>
                             <td>{{ $item->diagnosis }}</td>
-                            <td>{{ $item->solusi }}</td>
+                            <td>{{ !empty($item->solusi) ? $item->solusi : 'Tidak ada solusi tersedia' }}</td>
+                            <td>{{ is_numeric($item->confidence) ? $item->confidence . '%' : 'N/A' }}</td>
                             <td class="text-center">
                                 <form action="{{ route('user.history.delete', $item->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
                                     @csrf
