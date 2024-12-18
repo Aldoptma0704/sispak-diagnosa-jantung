@@ -55,7 +55,8 @@ class SolusiController extends Controller
         $user = Session::get('user');
         if ($user && $user['role'] === 'admin') {
             $solusi = Solusi::findOrFail($id);
-            return view('admin.editSolusi', compact('solusi'));
+            $diagnosis = Diagnosis::all();
+            return view('admin.solusi.edit', compact('solusi', 'diagnosis'));
         } else {
             return redirect('Home');
         }

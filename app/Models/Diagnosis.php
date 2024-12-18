@@ -16,4 +16,9 @@ class Diagnosis extends Model
     {
         return $this->hasMany(Rule::class);
     }
+
+    public function solusi()
+    {
+        return $this->hasMany(Solusi::class, 'diagnosis_id');
+    }
 }
