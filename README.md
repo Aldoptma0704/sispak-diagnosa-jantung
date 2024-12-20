@@ -20,13 +20,13 @@ Sistem ini adalah aplikasi berbasis database yang dirancang untuk membantu mendi
 
 4. **Solusi Penyakit**: Panduan langkah-langkah medis atau preventif sesuai diagnosis.
 
-## Sumber 
-- Referensi terkait sistem yang dibuat dapat ditemukan pada [JURNAL SISFOTEK GLOBAL : Perancangan Sistem Pakar Diagnosa Penyakit 
-Jantung dengan Metode Forward Chaining Berbasis Android ]([https://www.researchgate.net/](http://download.garuda.kemdikbud.go.id/article.php?article=2575474&val=24127&title=Perancangan%20Sistem%20Pakar%20Diagnosa%20Penyakit%20Jantung%20dengan%20Metode%20Forward%20Chaining%20Berbasis%20Android)).
+## Sumber
+- Referensi terkait sistem yang dibuat dapat ditemukan pada [JURNAL SISFOTEK GLOBAL: Perancangan Sistem Pakar Diagnosa Penyakit Jantung dengan Metode Forward Chaining Berbasis Android](https://download.garuda.kemdikbud.go.id/article.php?article=2575474&val=24127&title=Perancangan%20sistem%20Pakar%20Diagnosa%20Penyakit%20Jantung%20dengan%20Metode%20Forward%20Chaining%20Berbasis%20Android).
+
 
 ## Nama Kelompok
 - Anggota 1: Aldo Pratama
-- Anggota 2: Cakrawangsa Praba Al-Kautsar
+- Anggota 2: Cakrawangsa Praba Alkautsar
 - Anggota 3: Yunia Saputri
 - Anggota 4: David Nico Natanael Rumahorbo
 
