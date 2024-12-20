@@ -6,10 +6,7 @@
     <h2 class="text-center mb-4">Hasil Diagnosis Anda</h2>
 
     <!-- Cek Jika Diagnosis Tersedia -->
-    @if (!empty($results) && count($results) > 0)
-        @php
-            $result = $results[0]; // Ambil hanya hasil pertama
-        @endphp
+    @if (!empty($bestDiagnosis))
         <!-- Kartu Hasil Diagnosis -->
         <div class="card mb-3 shadow-sm">
             <div class="card-header bg-primary text-white">
@@ -17,16 +14,12 @@
             </div>
             <div class="card-body">
                 <p><strong>Nama Penyakit:</strong> 
-                    {{ isset($result['diagnosis']->name) ? $result['diagnosis']->name : $result['diagnosis'] }}
+                    {{ $bestDiagnosis['diagnosis'] ?? 'Diagnosis tidak ditemukan' }}
                 </p>
                 <p><strong>Solusi:</strong>
-                    @if ($result['diagnosis'] && $result['diagnosis']->solusi->isNotEmpty())
-                        {{ $result['diagnosis']->solusi->first()->solusi }}
-                    @else
-                        Tidak ada solusi tersedia
-                    @endif
+                    {{ $bestDiagnosis['solusi'] ?? 'Tidak ada solusi tersedia' }}
                 </p>
-                <p><strong>Keyakinan:</strong> {{ $result['confidence'] }}%</p>
+                <p><strong>Keyakinan:</strong> {{ $bestDiagnosis['confidence'] ?? '0' }}%</p>
             </div>
         </div>
     @else
