@@ -1,3 +1,36 @@
+# Sistem Diagnosa Penyakit Jantung
+
+## Deskripsi
+Sistem ini adalah aplikasi berbasis database yang dirancang untuk membantu mendiagnosa berbagai jenis penyakit jantung berdasarkan gejala yang dialami oleh pasien. Sistem ini mencakup fitur untuk mencatat riwayat diagnosis, memberikan solusi, dan memperkirakan tingkat keyakinan diagnosis.
+
+## Fitur Utama
+
+1. **Basis Data Diagnosis**: Informasi terkait berbagai penyakit jantung, seperti:
+   - Gagal Jantung
+   - Miokarditis
+   - Stable Angina Pectoris
+   - Katup Jantung
+   - Dan lain-lain.
+
+2. **Pencatatan Gejala**: Basis data lengkap mengenai gejala-gejala terkait penyakit jantung. Basis data gejala untuk diagnosa penyakit jantung sekitar 45 gejala.
+
+3. **Riwayat Diagnosis**:
+   - Menyimpan data diagnosis sebelumnya.
+   - Memberikan solusi dan tingkat keyakinan untuk setiap diagnosis.
+
+4. **Solusi Penyakit**: Panduan langkah-langkah medis atau preventif sesuai diagnosis.
+
+## Sumber 
+- Referensi terkait sistem yang dibuat dapat ditemukan pada [JURNAL SISFOTEK GLOBAL : Perancangan Sistem Pakar Diagnosa Penyakit 
+Jantung dengan Metode Forward Chaining Berbasis Android ]([https://www.researchgate.net/](http://download.garuda.kemdikbud.go.id/article.php?article=2575474&val=24127&title=Perancangan%20Sistem%20Pakar%20Diagnosa%20Penyakit%20Jantung%20dengan%20Metode%20Forward%20Chaining%20Berbasis%20Android)).
+
+## Nama Kelompok
+- Anggota 1: Aldo Pratama
+- Anggota 2: Cakrawangsa Praba Al-Kautsar
+- Anggota 3: Yunia Saputri
+- Anggota 4: David Nico Natanael Rumahorbo
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
