@@ -25,10 +25,10 @@ Sistem ini adalah aplikasi berbasis database yang dirancang untuk membantu mendi
 
 
 ## Nama Kelompok
-- Anggota 1: Aldo Pratama
-- Anggota 2: Cakrawangsa Praba Alkautsar
-- Anggota 3: Yunia Saputri
-- Anggota 4: David Nico Natanael Rumahorbo
+- Anggota 1: Aldo Pratama - 2217051144
+- Anggota 2: Cakrawangsa Praba Alkautsar - 2217051003
+- Anggota 3: Yunia Saputri - 2217051106
+- Anggota 4: David Nico Natanael Rumahorbo - 2217051129
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
