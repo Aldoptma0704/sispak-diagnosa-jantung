@@ -76,7 +76,14 @@ class UserDiagnosisController extends Controller
 
     public function history()
     {
-        $history = HistoryDiagnosis::all();
+        $user = session()->get('user');
+        if (!$user) {
+            return redirect('login')->with('error', 'Anda harus login terlebih dahulu.');
+        }
+
+        $userId = $user['id'];
+        $history = HistoryDiagnosis::where('user_id', $userId)->get();
+
         return view('user.history_diagnosis', compact('history'));
     }
 
